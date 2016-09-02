@@ -1,0 +1,4 @@
+name = to top example
+description = Кнопка Наверх для сайта.
+package = Модули индивидуальные: ON-DRUPAL.RU
+core = 7.x

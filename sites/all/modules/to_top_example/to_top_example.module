@@ -1,0 +1,12 @@
+<?php
+
+function to_top_example_js_alter(&$javascript) {
+  drupal_add_css(drupal_get_path('module', 'to_top_example') . '/to-top.css');
+  drupal_add_js(drupal_get_path('module', 'to_top_example') . '/to-top.js');
+}
+
+function to_top_example_page_alter(&$page) {
+  if ( (!user_access('access dashboard')) or (!user_access('access overlay')) ) {
+    $page['page_top'] = array('#markup' => '<div id="to_top"><!--noindex--><a href="#">&#9650; Наверх</a><!--/noindex--></div>');
+  }
+}

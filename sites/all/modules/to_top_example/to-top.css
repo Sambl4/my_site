@@ -1,0 +1,47 @@
+#to_top {
+  display: none;
+  position: fixed;
+	text-align: center;
+	position: fixed;
+	left: 0px;
+  height: 100%;
+  width: 100px;
+  padding: 13px 0 13px;
+  opacity: 0.3;
+  filter: alpha(opacity=30);
+  -webkit-transition: background-color 200ms linear;
+  -moz-transition: background-color 200ms linear;
+  transition: background-color 200ms linear;
+  -webkit-transition: opacity 200ms linear;
+  -moz-transition: opacity 200ms linear;
+  transition: opacity 200ms linear;
+  background: #CCC;
+  cursor: pointer;
+  border-right: solid 1px #FFF;
+  z-index:1000;
+}
+
+#to_top:hover {
+  opacity: 0.8;
+  filter: alpha(opacity=80);
+  -webkit-transition: background-color 200ms linear;
+  -moz-transition: background-color 200ms linear;
+  transition: background-color 200ms linear;
+  -webkit-transition: opacity 200ms linear;
+  -moz-transition: opacity 200ms linear;
+  transition: opacity 200ms linear;
+  background: #e2e2e2;
+}
+
+#to_top a {
+	color: #000;
+	padding-left: 10px;
+	padding-right: 10px;	
+	padding-top: 5px;	
+	padding-bottom: 5px;	
+}
+
+#to_top a:hover {
+	color: #000;
+  text-decoration: none;
+}
